@@ -1,0 +1,11 @@
+.collective-section {
+  background-image: url(../img/collective_bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  // height: 700px !important;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}

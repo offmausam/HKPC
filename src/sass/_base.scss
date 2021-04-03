@@ -1,0 +1,64 @@
+body {
+  background: #fff;
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+
+h1 {
+  font-size: rem(72px);
+
+  @include media-breakpoint-up(md) {
+    font-size: rem(46px);
+  }
+}
+
+h2 {
+  font-size: rem(36px);
+
+  @include media-breakpoint-up(md) {
+    font-size: rem(24px);
+  }
+}
+
+p {
+  font-family: $font-family-roboto;
+  font-size: rem(18px);
+
+  @include media-breakpoint-up(md) {
+    font-size: rem(16px);
+  }
+}
+
+section {
+  height: 100vh;
+  background-color: #000000;
+}
+
+.flex-auto {
+  flex: auto;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.strip {
+  height: rem(141px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  &.black {
+    background-color: #000000;
+  }
+
+  &.bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+}

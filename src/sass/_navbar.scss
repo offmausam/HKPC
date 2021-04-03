@@ -1,0 +1,28 @@
+.navbar-light {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-brand {
+  img {
+    height: rem(42px);
+  }
+}
+
+.nav-item {
+  font-size: rem(18px);
+  margin-right: rem(20px);
+
+  @include breakpoint(ldesktop) {
+    font-size: rem(24px);
+    margin-right: rem(40px);
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  .nav-link {
+    color: #000000;
+    font-weight: $font-weight-bold;
+  }
+}
