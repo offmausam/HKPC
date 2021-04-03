@@ -4,7 +4,11 @@
 
 .navbar-brand {
   img {
-    height: rem(42px);
+    height: rem(32px);
+
+    @include breakpoint(ldesktop) {
+      height: rem(42px);
+    }
   }
 }
 
@@ -22,7 +26,19 @@
   }
 
   .nav-link {
-    color: #000000;
+    color: #000000 !important;
     font-weight: $font-weight-bold;
+
+    img {
+      height: rem(26px);
+    }
   }
 }
+
+// .navbar-collapse {
+//   &.show {
+//     ul {
+//       margin-top: rem(24px);
+//     }
+//   }
+// }

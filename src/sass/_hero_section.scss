@@ -2,4 +2,10 @@
   background-image: url(../img/hero_banner.jpg);
   background-size: cover;
   background-position: center center;
+  height: 100vh;
+  background-color: #000000;
+
+  @include breakpoint(ldesktop) {
+    height: 100vh;
+  }
 }

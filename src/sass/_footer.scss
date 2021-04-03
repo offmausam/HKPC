@@ -1,5 +1,10 @@
 .footer-section {
+  height: 100vh;
   background-color: #000000;
+
+  @include breakpoint(ldesktop) {
+    height: 100vh;
+  }
 
   .fit-image {
     object-fit: cover;
@@ -35,6 +40,11 @@ form {
     border-radius: 0;
     background-color: transparent;
     border: 1px solid #ffffff;
-    font-size: rem(36px);
+    font-size: rem(24px);
+    padding: rem(20px) rem(100px);
+
+    @include breakpoint(ldesktop) {
+      font-size: rem(36px);
+    }
   }
 }
