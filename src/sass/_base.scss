@@ -1,5 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: #fff;
+  background: #ffffff;
   font-family: "Saira Extra Condensed", sans-serif;
 }
 
@@ -27,15 +31,6 @@ p {
     font-size: rem(18px);
   }
 }
-
-// section {
-//   height: 100vh;
-//   background-color: #000000;
-
-//   @include breakpoint(ldesktop) {
-//     height: 100vh;
-//   }
-// }
 
 .flex-auto {
   flex: auto;
