@@ -4,7 +4,7 @@
 
 .navbar-brand {
   img {
-    height: rem(32px);
+    height: rem(26px);
 
     @include breakpoint(ldesktop) {
       height: rem(42px);
@@ -12,9 +12,18 @@
   }
 }
 
+.navbar-toggler {
+  border: none;
+  padding: 0;
+}
+
 .nav-item {
   font-size: rem(18px);
-  margin-right: rem(20px);
+  margin-right: rem(0);
+
+  @include breakpoint(desktop) {
+    margin-right: rem(20px);
+  }
 
   @include breakpoint(ldesktop) {
     font-size: rem(24px);
@@ -33,4 +42,91 @@
       height: rem(26px);
     }
   }
+}
+
+.small-insta-icon {
+  margin-right: -130px;
+}
+
+#mobileIcon {
+  width: rem(40px);
+  height: rem(28px);
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#mobileIcon span {
+  display: block;
+  position: absolute;
+  height: rem(3px);
+  width: 100%;
+  background: #000000;
+  border-radius: rem(1px);
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+/* Icon 4 */
+
+#mobileIcon span:nth-child(1) {
+  top: 0;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#mobileIcon span:nth-child(2) {
+  top: rem(12px);
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#mobileIcon span:nth-child(3) {
+  top: rem(24px);
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#mobileIcon.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -rem(3px);
+  left: rem(8px);
+}
+
+#mobileIcon.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#mobileIcon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: rem(28px);
+  left: rem(8px);
 }
