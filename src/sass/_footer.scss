@@ -1,9 +1,9 @@
 .footer-section {
-  height: 100vh;
+  // height: 100vh;
   background-color: #000000;
 
   @include breakpoint(ldesktop) {
-    height: 100vh;
+    // height: 100vh;
   }
 
   .fit-image {
@@ -42,9 +42,28 @@ form {
     border: 1px solid #ffffff;
     font-size: rem(24px);
     padding: rem(20px) rem(100px);
+    color: #ffffff;
+
+    &:hover {
+      border: 1px solid #ffffff;
+      background-color: #ffffff;
+      color: #000000;
+      transition: all 0.2s ease-in;
+    }
 
     @include breakpoint(ldesktop) {
       font-size: rem(36px);
     }
+  }
+}
+
+.footer-side-img {
+  background-image: url(../img/footer_bg.jpg);
+  background-size: cover;
+  height: 100%;
+
+  @include breakpoint(tablet) {
+    position: absolute;
+    right: 0;
   }
 }
